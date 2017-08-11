@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+.ts-node/
+
+# Build output
+lib/
+
+# Test state
+test/state/
+
+# Mac
+.DS_Store
+
+# Lockfiles
+package-lock.json

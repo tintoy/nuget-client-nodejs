@@ -1,0 +1,37 @@
+{
+  "name": "nuget-client",
+  "version": "0.1.2",
+  "description": "A NuGet API client for NodeJS.",
+  "main": "lib/src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tintoy/nuget-client-nodejs.git"
+  },
+  "typings": "lib/src/index.d.ts",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc -p ./",
+    "build:live": "./node_modules/.bin/tsc --watch -p ./",
+    "docs": "./node_modules/.bin/typedoc --mode modules --excludePrivate --out ./docs",
+    "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.test.ts",
+    "install": "./node_modules/.bin/tsc -p ./"
+  },
+  "keywords": [
+    "nuget",
+    "client"
+  ],
+  "author": "tintoy",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.2",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.19",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "ts-node": "^3.3.0",
+    "typedoc": "^0.8.0",
+    "typescript": "^2.4.2"
+  }
+}

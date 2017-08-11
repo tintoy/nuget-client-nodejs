@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -rf ./docs
+./node_modules/.bin/typedoc --mode modules --excludePrivate --out ./docs
+echo "# Tell GitHub Pages that we're not using Jekyll" > ./docs/.nojekyll
