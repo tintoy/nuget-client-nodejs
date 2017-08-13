@@ -10,6 +10,3 @@ test/state/
 
 # Mac
 .DS_Store
-
-# Lockfiles
-package-lock.json

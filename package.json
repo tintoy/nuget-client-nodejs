@@ -1,6 +1,6 @@
 {
   "name": "nuget-client",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A NuGet API client for NodeJS.",
   "main": "lib/src/index.js",
   "repository": {
