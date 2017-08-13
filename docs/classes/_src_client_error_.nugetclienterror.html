@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>NuGetClient | nuget-client</title>
+	<title>NuGetClientError | nuget-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_src_client_.html">&quot;src/client&quot;</a>
+					<a href="../modules/_src_client_error_.html">&quot;src/client/error&quot;</a>
 				</li>
 				<li>
-					<a href="_src_client_.nugetclient.html">NuGetClient</a>
+					<a href="_src_client_error_.nugetclienterror.html">NuGetClientError</a>
 				</li>
 			</ul>
-			<h1>Class NuGetClient</h1>
+			<h1>Class NuGetClientError</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A client for the NuGet API.</p>
+						<p>An error raised by NuGetClients.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">NuGetClient</span>
+						<span class="tsd-signature-type">Error</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">NuGetClientError</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -91,20 +96,16 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_src_client_.nugetclient.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_src_client_error_.nugetclienterror.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_src_client_.nugetclient.html#defaultendpointurl" class="tsd-kind-icon">default<wbr>End<wbr>Point<wbr>Url</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_client_.nugetclient.html#getavailablepackageversions" class="tsd-kind-icon">get<wbr>Available<wbr>Package<wbr>Versions</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_client_.nugetclient.html#suggestpackageids" class="tsd-kind-icon">suggest<wbr>Package<wbr>Ids</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_src_client_error_.nugetclienterror.html#error" class="tsd-kind-icon">Error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src_client_error_.nugetclienterror.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_src_client_error_.nugetclienterror.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static"><a href="_src_client_error_.nugetclienterror.html#stack" class="tsd-kind-icon">stack</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,32 +117,32 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>NuGet<wbr>Client<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>endPointUrls<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_src_client_.nugetclient.html" class="tsd-signature-type">NuGetClient</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>NuGet<wbr>Client<wbr>Error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_src_client_error_.nugetclienterror.html" class="tsd-signature-type">NuGetClientError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/client.ts:20</li>
+									<li>Defined in <a href="https://github.com/tintoy/nuget-client-nodejs/blob/930de24/src/client/error.ts#L4">src/client/error.ts:4</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Create a new <a href="_src_client_.nugetclient.html">NuGetClient</a>.</p>
+									<p>Create a new NuGetClientError.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>endPointUrls: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>message: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The URLs of NuGet feed API end-points to use.</p>
+											<p>The error message.</p>
 										</div>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_src_client_.nugetclient.html" class="tsd-signature-type">NuGetClient</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_src_client_error_.nugetclienterror.html" class="tsd-signature-type">NuGetClientError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -149,86 +150,48 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="defaultendpointurl" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>End<wbr>Point<wbr>Url</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>End<wbr>Point<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;https://api.nuget.org/v3/index.json&quot;</span></div>
+					<a name="error" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ErrorConstructor</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/client.ts:10</li>
+							<li>Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:884</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The URL of the default NuGet API end-point.</p>
-						</div>
-					</div>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getavailablepackageversions" class="tsd-anchor"></a>
-					<h3>get<wbr>Available<wbr>Package<wbr>Versions</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Available<wbr>Package<wbr>Versions<span class="tsd-signature-symbol">(</span>packageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in src/client.ts:80</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get available versions for the specified package.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>packageId: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The Id of the target package.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A promise that resolves to all suggested package versions.</p>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="message" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Error.message</p>
+						<ul>
+							<li>Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:874</li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="suggestpackageids" class="tsd-anchor"></a>
-					<h3>suggest<wbr>Package<wbr>Ids</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">suggest<wbr>Package<wbr>Ids<span class="tsd-signature-symbol">(</span>partialId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in src/client.ts:54</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Provide suggestions to complete a package Id.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>partialId: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The partial package Id on which the suggestions will be based.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A promise that resolves to all suggested package Ids.</p>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Error.name</p>
+						<ul>
+							<li>Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:873</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+					<a name="stack" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagOptional">Optional</span> stack</h3>
+					<div class="tsd-signature tsd-kind-icon">stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Error.stack</p>
+						<p>Overrides Error.stack</p>
+						<ul>
+							<li>Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:875</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -238,14 +201,26 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_client_base_.html">"src/client/base"</a>
+					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_src_client_.html">"src/client"</a>
+						<a href="../modules/_src_client_error_.html">"src/client/error"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_client_index_.html">"src/client/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_client_v3_.html">"src/client/v3"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_index_.html">"src/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_test_utils_async_.html">"test/utils/async"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_test_v3_test_.html">"test/v3.test"</a>
 					</li>
 				</ul>
 			</nav>
@@ -254,19 +229,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_src_client_.nugetclient.html" class="tsd-kind-icon">Nu<wbr>Get<wbr>Client</a>
+						<a href="_src_client_error_.nugetclienterror.html" class="tsd-kind-icon">Nu<wbr>Get<wbr>Client<wbr>Error</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_src_client_.nugetclient.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_src_client_error_.nugetclienterror.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="_src_client_.nugetclient.html#defaultendpointurl" class="tsd-kind-icon">default<wbr>End<wbr>Point<wbr>Url</a>
+								<a href="_src_client_error_.nugetclienterror.html#error" class="tsd-kind-icon">Error</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_src_client_.nugetclient.html#getavailablepackageversions" class="tsd-kind-icon">get<wbr>Available<wbr>Package<wbr>Versions</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src_client_error_.nugetclienterror.html#message" class="tsd-kind-icon">message</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_src_client_.nugetclient.html#suggestpackageids" class="tsd-kind-icon">suggest<wbr>Package<wbr>Ids</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_src_client_error_.nugetclienterror.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+								<a href="_src_client_error_.nugetclienterror.html#stack" class="tsd-kind-icon">stack</a>
 							</li>
 						</ul>
 					</li>

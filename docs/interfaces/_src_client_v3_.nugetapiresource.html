@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;src/index&quot; | nuget-client</title>
+	<title>NuGetApiResource | nuget-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,16 +56,97 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_src_index_.html">&quot;src/index&quot;</a>
+					<a href="../modules/_src_client_v3_.html">&quot;src/client/v3&quot;</a>
+				</li>
+				<li>
+					<a href="_src_client_v3_.nugetapiresource.html">NuGetApiResource</a>
 				</li>
 			</ul>
-			<h1>External module &quot;src/index&quot;</h1>
+			<h1>Interface NuGetApiResource</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents a NuGet API resource.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">NuGetApiResource</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_client_v3_.nugetapiresource.html#_id" class="tsd-kind-icon">@id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_client_v3_.nugetapiresource.html#_type" class="tsd-kind-icon">@type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_client_v3_.nugetapiresource.html#comment" class="tsd-kind-icon">comment</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="_id" class="tsd-anchor"></a>
+					<h3>@id</h3>
+					<div class="tsd-signature tsd-kind-icon">@id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tintoy/nuget-client-nodejs/blob/930de24/src/client/v3.ts#L148">src/client/v3.ts:148</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The resource Id (end-point URL).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="_type" class="tsd-anchor"></a>
+					<h3>@type</h3>
+					<div class="tsd-signature tsd-kind-icon">@type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"SearchQueryService"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"SearchAutocompleteService"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"PackageBaseAddress/3.0.0"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tintoy/nuget-client-nodejs/blob/930de24/src/client/v3.ts#L153">src/client/v3.ts:153</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The resource type.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="comment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> comment</h3>
+					<div class="tsd-signature tsd-kind-icon">comment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tintoy/nuget-client-nodejs/blob/930de24/src/client/v3.ts#L158">src/client/v3.ts:158</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An optional comment describing the resource.</p>
+						</div>
+					</div>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
@@ -74,30 +155,60 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_src_client_base_.html">"src/client/base"</a>
+						<a href="../modules/_src_client_base_.html">"src/client/base"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_src_client_error_.html">"src/client/error"</a>
+						<a href="../modules/_src_client_error_.html">"src/client/error"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_src_client_index_.html">"src/client/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_src_client_v3_.html">"src/client/v3"</a>
+						<a href="../modules/_src_client_index_.html">"src/client/index"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_src_index_.html">"src/index"</a>
+						<a href="../modules/_src_client_v3_.html">"src/client/v3"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_test_utils_async_.html">"test/utils/async"</a>
+						<a href="../modules/_src_index_.html">"src/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_test_v3_test_.html">"test/v3.test"</a>
+						<a href="../modules/_test_utils_async_.html">"test/utils/async"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_test_v3_test_.html">"test/v3.test"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_src_client_v3_.nugetclientv3.html" class="tsd-kind-icon">Nu<wbr>Get<wbr>Client<wbr>V3</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_src_client_v3_.nugetapiresource.html" class="tsd-kind-icon">Nu<wbr>Get<wbr>Api<wbr>Resource</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_src_client_v3_.nugetapiresource.html#_id" class="tsd-kind-icon">@id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_src_client_v3_.nugetapiresource.html#_type" class="tsd-kind-icon">@type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_src_client_v3_.nugetapiresource.html#comment" class="tsd-kind-icon">comment</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_src_client_v3_.nugetindex.html" class="tsd-kind-icon">Nu<wbr>Get<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_src_client_v3_.html#defaultindexurlv3" class="tsd-kind-icon">default<wbr>IndexURLV3</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_src_client_v3_.html#isv3indexurl" class="tsd-kind-icon">is<wbr>V3IndexURL</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

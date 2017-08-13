@@ -71,12 +71,57 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_test_utils_async_.html#mochadonecallback" class="tsd-kind-icon">Mocha<wbr>Done<wbr>Callback</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_test_utils_async_.html#delay" class="tsd-kind-icon">delay</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_test_utils_async_.html#runasync" class="tsd-kind-icon">run<wbr>Async</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_test_utils_async_.html#run" class="tsd-kind-icon">run</a></li>
 							</ul>
 						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="mochadonecallback" class="tsd-anchor"></a>
+					<h3>Mocha<wbr>Done<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">Mocha<wbr>Done<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tintoy/nuget-client-nodejs/blob/930de24/test/utils/async.ts#L4">test/utils/async.ts:4</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Async callback for Mocha.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>done<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MochaDone</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>done: <span class="tsd-signature-type">MochaDone</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -92,7 +137,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in test/utils/async.ts:22</li>
+									<li>Defined in <a href="https://github.com/tintoy/nuget-client-nodejs/blob/930de24/test/utils/async.ts#L29">test/utils/async.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -114,31 +159,25 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="runasync" class="tsd-anchor"></a>
-					<h3>run<wbr>Async</h3>
+					<a name="run" class="tsd-anchor"></a>
+					<h3>run</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Async<span class="tsd-signature-symbol">(</span>done<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MochaDone</span>, action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_test_utils_async_.html#mochadonecallback" class="tsd-signature-type">MochaDoneCallback</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in test/utils/async.ts:7</li>
+									<li>Defined in <a href="https://github.com/tintoy/nuget-client-nodejs/blob/930de24/test/utils/async.ts#L12">test/utils/async.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Run an asynchronous action as part of a test.</p>
+									<p>Create a Mocha callback function to run an asynchronous action as part of a test.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
-								<li>
-									<h5>done: <span class="tsd-signature-type">MochaDone</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The Mocha <code>done</code> function.</p>
-									</div>
-								</li>
 								<li>
 									<h5>action: <span class="tsd-signature-type">function</span></h5>
 									<div class="tsd-comment tsd-typography">
@@ -158,7 +197,8 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_test_utils_async_.html#mochadonecallback" class="tsd-signature-type">MochaDoneCallback</a></h4>
+							<p>The Mocha callback function.</p>
 						</li>
 					</ul>
 				</section>
@@ -171,7 +211,16 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_src_client_.html">"src/client"</a>
+						<a href="_src_client_base_.html">"src/client/base"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_src_client_error_.html">"src/client/error"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_src_client_index_.html">"src/client/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_src_client_v3_.html">"src/client/v3"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_src_index_.html">"src/index"</a>
@@ -179,15 +228,21 @@
 					<li class="current tsd-kind-external-module">
 						<a href="_test_utils_async_.html">"test/utils/async"</a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_test_v3_test_.html">"test/v3.test"</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_test_utils_async_.html#mochadonecallback" class="tsd-kind-icon">Mocha<wbr>Done<wbr>Callback</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_test_utils_async_.html#delay" class="tsd-kind-icon">delay</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_test_utils_async_.html#runasync" class="tsd-kind-icon">run<wbr>Async</a>
+						<a href="_test_utils_async_.html#run" class="tsd-kind-icon">run</a>
 					</li>
 				</ul>
 			</nav>
