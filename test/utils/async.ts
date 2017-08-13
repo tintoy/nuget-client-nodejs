@@ -1,17 +1,24 @@
 /**
- * Run an asynchronous action as part of a test.
- * 
- * @param done The Mocha `done` function.
- * @param action The asynchronous action to perform.
+ * Async callback for Mocha.
  */
-export function runAsync(done: MochaDone, action: () => Promise<void>): void {
-    action()
-        .then(() => {
-            done();
-        })
-        .catch(error => {
-            done(error);
-        });
+export type MochaDoneCallback = (done: MochaDone) => void;
+
+/**
+ * Create a Mocha callback function to run an asynchronous action as part of a test.
+ * 
+ * @param action The asynchronous action to perform.
+ * @returns {MochaDoneCallback} The Mocha callback function.
+ */
+export function run(action: () => Promise<void>): MochaDoneCallback {
+    return done => {
+        action()
+            .then(() => {
+                done();
+            })
+            .catch(error => {
+                done(error);
+            });
+    };
 }
 
 /**

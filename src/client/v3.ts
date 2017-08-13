@@ -24,7 +24,7 @@ export class NuGetClientV3 extends NuGetClient {
     /**
      * The URLs for API end-points used by the client.
      */
-    private readonly autoCompleteApiUrls: string[];
+    public readonly autoCompleteApiUrls: string[];
 
     /**
      * Create a new NuGet v3 API client.
