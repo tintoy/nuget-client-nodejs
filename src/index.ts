@@ -3,3 +3,4 @@
  */
 
 export * from './client';
+import { PackageSources, getConfiguredPackageSources, getUserNuGetConfigFile } from './config';

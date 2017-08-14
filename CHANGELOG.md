@@ -1,3 +1,7 @@
+## v0.1.5
+
+* Add support for parsing NuGet.config.
+
 ## v0.1.4
 
 * Update usage example in README.
